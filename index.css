@@ -1,0 +1,284 @@
+/* Configurações gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos de fonte */
+.poppins-thin 
+{
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+ 
+}
+
+.flex
+{
+  display: flex;
+}
+
+body 
+{
+  background-color: rgba(231, 231, 231, 0.767);
+  height: 100vh;
+}
+
+.interface 
+{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ESTILO CABEÇA */
+
+header 
+{
+  padding: 40px;
+}
+
+header > .interface 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a
+ {
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header a:hover
+ {
+  color: #ff00c8;
+  transform: scale(1.05);
+  transition: .2s;
+}
+
+header nav ul
+ {
+  list-style-type: none;
+}
+
+header nav ul li 
+{
+  display: inline-block;
+  padding: 0 40px;
+ 
+}
+
+
+
+header .btn-contato
+ {
+  float: right;
+}
+
+h2.Titulo
+{
+  color: rgb(255, 0, 200);
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.Titulo span
+{
+  color: rgb(255, 0, 191);
+  
+}
+
+
+
+ .btn-contato button:hover, form .btn-enviar input{
+  box-shadow: 0px 0px 8px #ff006a;
+  transform: scale(1.05);
+}
+/* TOPO DO SITE  */
+.img-topo-site img 
+{        /* img para acessar diratamnte a minha imagem*/
+  max-width: 300px; 
+  height: auto; /* mater  a proporção da imagem */
+  border-radius: 50%; /* Transforma a imagem em um círculo */
+  border: 1px solid #ff00f2; /* Adiciona uma borda sólida   */
+  margin-top: 120px;
+  
+}
+
+.topo-do-site 
+{
+  padding: 40px 4%;
+}
+
+.topo-do-site .flex 
+{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1{
+  color: rgb(3, 0, 0);
+  font-size: 42px;
+  line-height: 40px;
+
+
+}
+
+.topo-do-site h1 span
+{
+  color: #000000;
+}
+
+.topo-do-site p
+{
+  color: rgb(0, 0, 0);
+  margin: 40px 0;
+}
+
+.btn-contato button 
+{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ec03d9af;
+  border: 0;
+  border-radius: 30px;
+  margin-top: -20px;
+  cursor: pointer;
+  display: inline-block;
+  transition: .2s;
+}
+
+.topo-do-site .img-topo-site img
+{
+  position: relative;
+  animation: Flutuar 2s ease-in-out infinite alternate;
+
+
+
+
+}
+
+/* animaçoes  */
+@keyframes Flutuar
+{
+  0%{
+    top: 0;
+
+  }
+  100%{
+    top:30px;
+  }
+  
+
+}
+
+section.Especialidades .flex
+{
+  gap: 60px;
+
+}
+  
+
+
+section.Especialidades
+{
+  padding: 40px 4%;
+
+}
+
+
+.Especialidades .especialidades-box
+{
+  color: rgb(80, 10, 68);
+  padding: 40px;
+  margin-top: 45px;
+  transition: .2s;
+  
+
+
+}
+.Especialidades .especialidades-box:hover
+{
+transform: scale(1.05);
+box-shadow: 0  0 8px rgba(255, 255, 255, 0.5); 
+}
+
+.Especialidades .especialidades-box i 
+{
+  font-size: 70px;
+  color:rgb(80, 10, 68);
+}
+
+
+.Especialidades .especialidades-box h3 
+{
+  font-size: 28px;
+  margin: 15px 0 ;
+
+ 
+}
+
+
+section.forumlario{
+  padding: 80px 4%;
+
+}
+
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+
+}
+
+form input, form textarea{
+  width: 100%;
+  background-color: #000000;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color : #ffffff;
+  font-size: 18px;
+
+}
+form textarea{
+  resize: none;
+ 
+}
+
+form .btn-enviar{
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input{
+  width: 120px;
+  background-color: #000000;
+  color: #6600ff;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
