@@ -96,17 +96,12 @@
         <section class="formulario">
             <div class="interface">
                 <h2 class="Titulo">Fale  <SPAN>Comigo.</SPAN></h2>
-                <form action="">
-                    <input type = "text" name ="" id ="" placeholder="Seu nome :"  required >
-                    <input type = "text" name ="" id ="" placeholder="Seu Email :" >
-                    <input type = "text" name ="" id ="" placeholder="Celular :" >
-                    
-                    <textarea name="nome_do_campo" id="identificador_do_campo" placeholder="Sua mensagem" required></textarea>
-                   
+                <form method="post" action="envia.php">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome:" required>
+                    <input type="text" name="email" id="email" placeholder="Seu Email:">
+                    <input type="text" name="celular" id="celular" placeholder="Celular:">
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                    <section id="formulario" class="formulario"></section>
-                 
-    
                 </form>
 
             </div>
